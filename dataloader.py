@@ -28,10 +28,10 @@ class GalaxEyeDataset(Dataset):
         post = cv2.resize(post, self.img_size)
         mask = cv2.resize(mask, self.img_size, interpolation=cv2.INTER_NEAREST)
 
-        # Mandatory Label Remapping [cite: 20, 23, 24]
+        # Label Remapping
         binary_mask = np.where((mask == 2) | (mask == 3), 1, 0).astype(np.float32)
 
-        # Data Augmentation (Flips) [cite: 37]
+        # Data Augmentation
         if self.augment:
             if random.random() > 0.5:
                 pre, post, binary_mask = np.fliplr(pre).copy(), np.fliplr(post).copy(), np.fliplr(binary_mask).copy()
