@@ -39,14 +39,14 @@ python train.py --config config.yaml
 python eval.py --data_path /path/to/test_data --weights ./best_model.pth
 
 # References
-1. The Core Architecture: 
+1. The Core Architecture:
 Ronneberger, O., Fischer, P., & Brox, T. (2015). U-Net: Convolutional Networks for Biomedical Image Segmentation. International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI).
-2. EO-SAR Fusion for Change Detection: 
+3. EO-SAR Fusion for Change Detection: 
 Ebel, P., Meraner, A., Schmitt, M., & Zhu, X. X. (2021). Multi-sensor Data Fusion for Cloud Removal in Global and Unfiltered Sentinel-2 Imagery. IEEE Transactions on Geoscience and Remote Sensing.
-3. Handling Class Imbalance:  
+4. Handling Class Imbalance:  
 Li, X., Sun, X., Meng, Y., Liang, J., Wu, F., & Li, J. (2020). Dice Loss for Data-imbalanced NLP Strategies. arXiv preprint arXiv:1911.02855.
-4. Remote Sensing Change Detection: 
+5. Remote Sensing Change Detection: 
 Chen, H., & Shi, Z. (2020). A Spatial-Temporal Attention-Based Method and a New Dataset for Remote Sensing Image Change Detection. Remote Sensing.
-5. Siamese Network: 
+6. Siamese Network: 
 Daudt, R. C., Le Saux, B., & Boulch, A. (2018). Fully Convolutional Siamese Networks for Change Detection. In IEEE International Conference on Image Processing (ICIP).
 
